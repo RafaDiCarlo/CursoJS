@@ -1,0 +1,59 @@
+/* https://www.color-hex.com/color-palette/9777 */
+/* https://www.color-hex.com/color-palette/5361 */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #eed9c4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#preguntas-container {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.respuesta-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #baffc9;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.respuesta-btn:hover {
+    background-color: #93ca9f;
+}
+
+#siguiente-btn {
+    display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#siguiente-btn:hover {
+    background-color: #007A99;
+}
