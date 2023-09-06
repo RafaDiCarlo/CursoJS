@@ -1,0 +1,42 @@
+[
+    {
+        "pregunta": "¿Cuál es el río más largo del mundo?",
+        "respuestas": ["Nilo", "Amazonas", "Yangtsé", "Misisipi"],
+        "respuesta_correcta": "Amazonas"
+    },
+    {
+        "pregunta": "¿Cuál es el elemento más abundante en la Tierra?",
+        "respuestas": ["Hierro", "Oxígeno", "Silicio", "Carbono"],
+        "respuesta_correcta": "Oxígeno"
+    },
+    {
+        "pregunta": "¿En qué año se fundó la Organización de las Naciones Unidas (ONU)?",
+        "respuestas": ["1945", "1955", "1935", "1965"],
+        "respuesta_correcta": "1945"
+    },
+    {
+        "pregunta": "¿Cuál es el planeta más grande del sistema solar?",
+        "respuestas": ["Tierra", "Marte", "Saturno", "Júpiter"],
+        "respuesta_correcta": "Júpiter"
+    },
+    {
+        "pregunta": "¿Quién escribió la obra 'Romeo y Julieta'?",
+        "respuestas": ["Charles Dickens", "Jane Austen", "William Shakespeare", "Leo Tolstoy"],
+        "respuesta_correcta": "William Shakespeare"
+    },
+    {
+        "pregunta": "¿Cuál es el símbolo químico del oro?",
+        "respuestas": ["Go", "Au", "Or", "Go"],
+        "respuesta_correcta": "Au"
+    },
+    {
+        "pregunta": "¿En qué año ocurrió el primer vuelo exitoso de los hermanos Wright?",
+        "respuestas": ["1903", "1913", "1923", "1893"],
+        "respuesta_correcta": "1903"
+    },
+    {
+        "pregunta": "¿Cuál es la capital de Japón?",
+        "respuestas": ["Kioto", "Osaka", "Tokio", "Hiroshima"],
+        "respuesta_correcta": "Tokio"
+    }
+]
