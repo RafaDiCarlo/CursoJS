@@ -24,33 +24,6 @@ function cargarPregunta() {
     preguntaActual++;
 }
 
-// Definir una función para cargar las preguntas desde el archivo JSON
-/*function cargarPreguntas() {
-    fetch('../json/preguntas.json') 
-        .then(response => response.json())
-        .then(data => {
-            
-            data.forEach(pregunta => {
-                // Accede a los campos de la pregunta y realiza acciones
-                const preguntaTexto = pregunta.pregunta;
-                const respuestas = pregunta.respuestas;
-                const respuestaCorrecta = pregunta.respuesta_correcta;
-
-                // Aquí puedes crear objetos de pregunta o realizar cualquier otra acción
-                // por ejemplo, agregarlos a un arreglo de preguntas
-                const nuevaPregunta = {
-                    pregunta: preguntaTexto,
-                    respuestas: respuestas,
-                    respuesta_correcta: respuestaCorrecta
-                };
-                this.preguntas.push(nuevaPregunta);
-        })
-        .catch(error => {
-            console.error('Error al cargar las preguntas:', error);
-        });
-})
-}*/
-
 // Función para verificar la respuesta seleccionada
 function verificarRespuesta(event) {
     const respuestaSeleccionada = event.target.textContent;
@@ -100,7 +73,8 @@ window.onload = function() {
         const defaultScore = {
             triviaScore: 0,
             pongScore: 0,
-            tatetiScore: 0
+            tatetiScore: 0,
+            globalScore: triviaScore + pongScore + tatetiScore
         };
         Score = defaultScore
     }

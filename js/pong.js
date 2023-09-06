@@ -39,12 +39,12 @@ function draw() {
     ballX += ballSpeedX;
     ballY += ballSpeedY;
 
-    // Colisión con los bordes verticales
+    // Colisión bordes verticales
     if (ballY + ballSize / 2 > canvas.height || ballY - ballSize / 2 < 0) {
         ballSpeedY = -ballSpeedY;
     }
 
-    // Colisión con las raquetas
+    // Colisión raquetas
     if (
         (ballX - ballSize / 2 < paddleWidth && ballY > playerY && ballY < playerY + paddleHeight) ||
         (ballX + ballSize / 2 > canvas.width - paddleWidth && ballY > opponentY && ballY < opponentY + paddleHeight)
@@ -65,16 +65,13 @@ function draw() {
         reiniciarPelota();
     }
 
+    // Raqueta oponente
     const targetY = ballY - paddleHeight / 2 + Math.random() * opponentErrorMargin - opponentErrorMargin / 2;
-     // Mover la raqueta del oponente (IA simple)
      if (opponentY < targetY) {
         opponentY += opponentSpeed;
     } else if (opponentY > targetY) {
         opponentY -= opponentSpeed;
     }
-
-
-
     // Dibujar en cada frame
     requestAnimationFrame(draw);
 }
@@ -109,7 +106,8 @@ window.onload = function() {
         const defaultScore = {
             triviaScore: 0,
             pongScore: 0,
-            tatetiScore: 0
+            tatetiScore: 0,
+            globalScore: triviaScore + pongScore + tatetiScore
         };
         Score = defaultScore
     }
@@ -123,6 +121,7 @@ window.onload = function() {
 function mostrarScore(){
     document.getElementById("puntajeGlobal")
     .textContent = Score.pongScore + Score.tatetiScore + Score.triviaScore ;
-    document.getElementById("puntajeTrivia")
-        .textContent = Score.triviaScore;
+    document.getElementById("puntajePong")
+        .textContent = Score.pongScore;
 }
+
